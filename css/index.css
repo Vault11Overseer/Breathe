@@ -1,0 +1,25 @@
+/*--------------------------------------------------------------
+>>> INDEX
+--------------------------------------------------------------*/
+
+/* MASTER */
+@import "./presets/1reset.css";
+@import "./presets/3color.css";
+@import "./presets/4navMenu.css";
+@import "./presets/5footer.css";
+/* EXTRA */
+@import "./presets/circles.css"; 
+@import "./presets/music.css";
+
+
+/* MEDIA QUERY */
+@import "./MediaQuery/min1400.css";
+@import "./MediaQuery/1400.css";
+@import "./MediaQuery/1200.css";
+@import "./MediaQuery/992.css";
+@import "./MediaQuery/768.css";
+@import "./MediaQuery/576.css";
+
+/*--------------------------------------------------------------
+>>> INDEX
+--------------------------------------------------------------*/
