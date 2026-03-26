@@ -1,42 +1,147 @@
-#### BREATHE
+# Breathe
 
-    ### STATUS
-        ## CURRENT STATUS
-            Live
-        ## DEMONSTRATION
-            Feel free to check out the live version of this application @ https://alteredartco.com/breatheapp/
+A responsive breathing and relaxation web application designed to help users reduce stress using guided breathing, ambient music, visual animations, and rotating inspirational quotes.
 
-    ### DESCRIPTION
-        ## STACK
-            HTML 5
-            JavaScript
-            CSS 3
-        ## SHORT DESCRIPTION
-            A breathing and relaxation application.
-        ## LONG DESCRIPTION
-            This is a breathing and relaxation application built with a simple stack, to help users relax in a time of need, such as interviews 
-            or in times os stress. This is a simple application built with HTML. The music and animations are handled with simple CSS and JavaScript.
-            Enjoy the quotes while 
-        ## FUTURE DEVELOPMENT
-            This is currently a finished project.
+## Demo
 
-    ### DEPLOYMENT
-        ## REQUIRMENTS
-            OS: ANY
-            Languages: NONE
-            Libraries: NONE
-        ## Startup Install
-            To use the finished project, simply clone the files, add them to a server, and then access the index.html.
-        ## Dev Install 
-            This is the same process. 
-            Seeing as this is Vanilla JavaScript and HTML, there are no dependencies or libraries to install.
-                
-    ### ISSUES
-        ## FOUND AN ISSUE?
-            If you found an issue or a bug in this code please contact me at cherokeedreemer@gmail.com.
-            Or if you know how to fix it and want to fix, please make a git push with your changes.
-        ## ISSUE LOG
-            None
+Live demo: https://alteredartco.com/breatheapp/
 
-    ### THANKS
-        The Vault 11 Overseer, thanks you for visiting. 
+---
+
+## Overview
+
+Breathe is a lightweight browser-based application built using vanilla HTML, CSS, and JavaScript. It provides an interactive relaxation environment that combines breathing prompts, background visuals, music playback, and motivational quotes.
+
+The goal of the project is to create a simple, distraction-free tool that users can access on desktop or mobile devices during moments of stress, focus sessions, or relaxation.
+
+---
+
+## Features
+
+- Guided breathing text prompts (breath in / breath out cycles)
+- Background scene switching via navigation menu
+- Ambient music player with play, pause, skip, and progress controls
+- Rotating inspirational quotes
+- Responsive design for mobile, tablet, and desktop
+- Hamburger navigation menu for mobile usability
+- Touch and click interaction support
+- Minimal, dependency-free implementation
+
+---
+
+## Tech Stack
+
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Font Awesome (icons)
+- Google Fonts
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Any modern web browser
+- Optional: Local server for development
+
+### Installation
+
+1. Clone the repository:
+git clone <repository-url>
+
+2. Navigate into the project:
+cd breathe
+
+3. Run locally (optional):
+python -m http.server
+
+Then open:
+http://localhost:8000
+
+Or open the `index.html` file directly in a browser.
+
+---
+
+## Usage
+
+### Desktop
+
+- Use the navigation menu to switch background scenes
+- Use the music player controls to play, pause, or skip tracks
+- Watch breathing prompts and follow the rhythm
+- Read rotating quotes displayed in the UI
+- Interact with controls using mouse clicks
+
+### Mobile
+
+- Tap the hamburger menu to access navigation options
+- Tap to interact with music controls
+- Follow breathing prompts displayed on screen
+- Swipe/tap interactions supported for general UI elements
+- Designed to be responsive across screen sizes
+
+### Settings / Controls (if applicable)
+
+- Navigation menu (hamburger icon) to switch scenes:
+  - Red Shift
+  - Mountain Top
+  - Temple Tree
+  - Temple
+  - Wormhole
+- Music controls:
+  - Play / Pause
+  - Previous / Next track
+  - Progress bar seek
+- Breathing display updates automatically on interval
+
+---
+
+## Key Improvements / Updates
+
+- Added mobile-responsive layout
+- Implemented hamburger navigation menu for mobile UX
+- Integrated audio player with UI controls
+- Added rotating quote system
+- Added breathing prompt animations/text cycling
+- Improved UI organization and accessibility
+- Modularized JavaScript into separate feature files
+
+---
+
+## Future Improvements
+
+- User accounts and login system
+- Custom playlists and audio uploads
+- Adjustable breathing pace settings
+- Theme customization and presets
+- Expanded animation and visual effects
+- Enhanced accessibility options (ARIA support, reduced motion mode)
+
+---
+
+## Contributing
+
+1. Fork the repository  
+2. Create a feature branch  
+3. Commit your changes  
+4. Open a pull request  
+
+---
+
+## Issues
+
+If you encounter bugs or unexpected behavior, please report them via the repository’s issue tracker or contact the maintainer.
+
+---
+
+## License
+
+No license specified. Add a license if redistribution or reuse is intended.
+
+---
+
+## Notes
+
+This project emphasizes simplicity, responsiveness, and usability without external frameworks. It is designed to run entirely in the browser with minimal setup.

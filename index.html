@@ -1,3 +1,6 @@
+<!-- index.html -->
+<!-- INDEX -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,58 +8,71 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<link rel="shortcut icon" type="image/webp" href="./images/aa_logo.webp"/>
+	<link rel="shortcut icon" type="image/webp" href="./assets/images/aa_logo.webp" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/media.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=My+Soul&family=Roboto+Mono:wght@100&family=Roboto:ital,wght@0,100;1,100&family=Sacramento&family=Square+Peg&family=Updock&display=swap" rel="stylesheet"> 
+	<link
+		href="https://fonts.googleapis.com/css2?family=My+Soul&family=Roboto+Mono:wght@100&family=Roboto:ital,wght@0,100;1,100&family=Sacramento&family=Square+Peg&family=Updock&display=swap"
+		rel="stylesheet">
 	<title>Breathe 2.0</title>
 </head>
 
 <body>
 	<div id="background">
 
-
 		<!-- NAVIGATION -->
 		<div class="masthead" id='masthead'>
 			<header class="header" id="Header">
 				<nav class="header_navbar">
+					<!-- NAVIGATION LINKS -->
 					<ul class='navbar_links nav_menu'>
-						<li class='nav_item secondary'><a onclick="redshift()" id="redshift" class='nav_link'>Red Shift</a></li>
-						<li class='nav_item secondary'><a onclick="mountaintop()" id="mountaintop" class='nav_link'>Mountain Top</a></li>
-						<li class='nav_item secondary'><a onclick="templetree()" id="templetree" class='nav_link'>Temple Tree</a></li>
-						<li class='nav_item secondary'><a onclick="temple()" id="temple" class='nav_link'>Temple</a></li>
-						<li class='nav_item secondary'><a onclick="wormhole()" id="wormhole" class='nav_link'>Wormhole</a></li>
+						<li class='nav_item secondary'><a onclick="redshift()" id="redshift" class='nav_link'>Red
+								Shift</a></li>
+						<li class='nav_item secondary'><a onclick="mountaintop()" id="mountaintop"
+								class='nav_link'>Mountain Top</a></li>
+						<li class='nav_item secondary'><a onclick="templetree()" id="templetree" class='nav_link'>Temple
+								Tree</a></li>
+						<li class='nav_item secondary'><a onclick="temple()" id="temple" class='nav_link'>Temple</a>
+						</li>
+						<li class='nav_item secondary'><a onclick="wormhole()" id="wormhole"
+								class='nav_link'>Wormhole</a></li>
 					</ul>
+
+					<!-- HAMBURGER MENU -->
 					<div class="hamburger">
-					<span class="bar"></span>
-					<span class="bar"></span>
-					<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
 					</div>
 				</nav>
 			</header>
-		</div>  
-
+		</div>
 
 		<div class="main-container">
 
 			<!-- CONTROL PANEL -->
 			<div class="control-panel">
 
+				<!-- WELCOME + QUOTE SECTION -->
 				<div class="welcome-container">
 					<div>
-						<h1> Welcome & Relax</h1>
+						<h1>Welcome & Relax</h1>
 						<hr>
 					</div>
-					
+
 					<div id="changeText" class="quote-container">
-						<p id="quote-text">To resist change, to try to cling to life, is therefore like holding your breath, if you persist you kill yourself.</p>
+						<p id="quote-text">To resist change, to try to cling to life, is therefore like holding your
+							breath, if you persist you kill yourself.</p>
 						<h6 id="quote-author">~Alan Watts~</h6>
 					</div>
 				</div>
 
+				<!-- MUSIC + BREATHING SIDE -->
 				<div class="music-side">
+					<!-- MUSIC PLAYER -->
 					<div id="music">
 						<div class="music-container" id="music-container">
 							<div class="music-info">
@@ -67,7 +83,8 @@
 							</div>
 							<audio src="C:\xampp\htdocs\Breathe\public\assets\music\focus.mp3" id="audio"></audio>
 							<div class="music-img-container">
-								<img src="C:\xampp\htdocs\Breathe\public\assets\images\focus.webp" alt="music-cover" id="music-cover" />
+								<img src="C:\xampp\htdocs\Breathe\public\assets\images\focus.webp" alt="music-cover"
+									id="music-cover" />
 							</div>
 							<div class="music-navigation">
 								<button id="prev" class="action-btn">
@@ -80,16 +97,18 @@
 									<i class="fas fa-forward"></i>
 								</button>
 							</div>
-						</div> 
-					</div> 
+						</div>
+					</div>
 
+					<!-- BREATHING TEXT -->
 					<div class="word-container" id="word-container">
-						<h2 class="word" id="word"><span>breathe IN!</span></h2>
+						<h2 class="word" id="word"><span>Breathe IN!</span></h2>
 					</div>
 				</div>
 
 			</div>
 
+			<!-- BACKGROUND CIRCLES -->
 			<div id="circles">
 				<div class="circle-container">
 					<div class="circle"></div>
@@ -102,28 +121,37 @@
 					<div class="circle"></div>
 					<div class="circle"></div>
 					<div class="circle"></div>
-				</div>	
+				</div>
 			</div>
+
 		</div>
 
-		<footer id="footer">
-			<a href="https://jaredmatta.com/"><img src="./images/aa_logo.webp" alt="logo" class='footer-logo'></a>
-			<p><script>document.write(new Date().getFullYear());</script> @ <a href="https://jaredmatta.com/"> Altered Art</a></p>
-			<a href="./learnmore.html">Learn More</a>
+		<!-- FOOTER -->
+		<footer>
+			<p>
+				<script>document.write(new Date().getFullYear());</script> @ <a href="https://jaredmatta.com/"><img
+						src="./assets/images/aa_logo.webp" alt="logo" class='footer-logo'
+						style="width: 50px; height:50px;"></a>
+			</p>
 		</footer>
 
 	</div>
+
+	<!-- SCRIPTS -->
+	<script src="./js/music.js"></script>
+	<script src="./js/quotation.js"></script>
+	<script src="./js/menu.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+	<script>
+		// BACKGROUND CHANGE FUNCTIONS
+		function mountaintop() { document.getElementById("background").style.backgroundImage = "url('./assets/images/mountain-top.webp')"; }
+		function redshift() { document.getElementById("background").style.backgroundImage = "url('./assets/images/xred-shift.webp')"; }
+		function templetree() { document.getElementById("background").style.backgroundImage = "url('./assets/images/temple-tree.webp')"; }
+		function temple() { document.getElementById("background").style.backgroundImage = "url('./assets/images/temple.webp')"; }
+		function wormhole() { document.getElementById("background").style.backgroundImage = "url('./assets/images/wormhole.webp')"; }
+	</script>
+
 </body>
-<script src="./js/music.js"></script>
-<script src="./js/quotation.js"></script>
-<script src="./js/navMenu.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script>
-	function mountaintop() {document.getElementById("background").style.backgroundImage = "url('./images/mountain-top.webp')";}
-	function redshift() {document.getElementById("background").style.backgroundImage = "url('./images/xred-shift.webp')";}
-	function templetree() {document.getElementById("background").style.backgroundImage = "url('./images/temple-tree.webp')";}
-	function temple() {document.getElementById("background").style.backgroundImage = "url('./images/temple.webp')";}
-	function wormhole() {document.getElementById("background").style.backgroundImage = "url('./images/wormhole.webp')";}
-</script>
 
 </html>
