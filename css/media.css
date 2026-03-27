@@ -129,7 +129,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
-        background-image: url("../../assets/images/xred-shift.webp");
+        background-image: url("../../assets/images/backgrounds/redshift.webp");
     }
 
     /* LAYOUT END */
@@ -218,33 +218,13 @@
 @media only screen and (max-width: 992px) {
 
     /* TEXT */
-    h1 {
-        font-size: calc(1.01rem + 0.3vw);
-    }
-
-    h2 {
-        font-size: calc(0.15rem + 0.9vw);
-    }
-
-    h4 {
-        font-size: calc(0.91rem + 0.3vw);
-    }
-
-    h6 {
-        font-size: calc(1.01rem + 0.1vw);
-    }
-
-    a {
-        font-size: calc(.75rem + 0.3vw);
-    }
-
-    p {
-        font-size: calc(.65rem + 0.3vw);
-    }
-
-    li {
-        list-style: none;
-    }
+    h1 {font-size: calc(1.01rem + 0.3vw);}
+    h2 {font-size: calc(0.15rem + 0.9vw);}
+    h4 {font-size: calc(0.91rem + 0.3vw);}
+    h6 {font-size: calc(1.01rem + 0.1vw);}
+    a {font-size: calc(.75rem + 0.3vw);}
+    p {font-size: calc(.65rem + 0.3vw);}
+    li {list-style: none;}
 
     /* TEXT END */
 
@@ -254,9 +234,7 @@
         padding: 1.8rem 1.2rem !important;
     }
 
-    hr {
-        margin: 10px auto 17px auto;
-    }
+    hr {margin: 10px auto 17px auto;}
 
     #quote-text {
         line-height: 19px !important;
@@ -276,37 +254,17 @@
 @media only screen and (max-width: 1400px) {
 
     /* TEXT */
-    h1 {
-        font-size: calc(1.15rem + 1.1vw);
-    }
-
-    h2 {
-        font-size: calc(0.15rem + 0.9vw);
-    }
-
-    h4 {
-        font-size: calc(1.01rem + 0.3vw);
-    }
-
-    h6 {
-        font-size: calc(1.01rem + 0.1vw);
-    }
-
-    a,
-    p {
-        font-size: calc(.75rem + 0.3vw);
-    }
-
-    li {
-        list-style: none;
-    }
+    h1 {font-size: calc(1.15rem + 1.1vw);}
+    h2 {font-size: calc(0.15rem + 0.9vw);}
+    h4 {font-size: calc(1.01rem + 0.3vw);}
+    h6 {font-size: calc(1.01rem + 0.1vw);}
+    a,p {font-size: calc(.75rem + 0.3vw);}
+    li {list-style: none;}
 
     /* TEXT END */
 
     /* MAIN CONTAINER */
-    .main-container {
-        max-width: 100%;
-    }
+    .main-container {max-width: 100%;}
 
     /* MAIN CONTAINER END */
 
@@ -315,7 +273,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
-        background-image: url(../../assets/images/xred-shift.webp);
+        background-image: url(../../assets/images/backgrounds/redshift.webp);
     }
 
     /* LAYOUT END */
@@ -366,9 +324,7 @@
         font-family: "Times New Roman", Times, serif;
     }
 
-    #quote-author {
-        font-style: italic;
-    }
+    #quote-author {font-style: italic;}
 
     /* CONTROL PANEL END */
 
@@ -395,23 +351,13 @@
     }
 
     @keyframes gradient {
-        0% {
-            background-position: 0% 50%;
-        }
-
-        50% {
-            background-position: 100% 50%;
-        }
-
-        100% {
-            background-position: 0% 50%;
-        }
+        0% {background-position: 0% 50%;}
+        50% {background-position: 100% 50%;}
+        100% {background-position: 0% 50%;}
     }
 
     @keyframes mymove {
-        50% {
-            font-size: 1.7rem;
-        }
+        50% {font-size: 1.7rem;}
     }
 
     .nav_link {
@@ -428,30 +374,12 @@
 @media only screen and (min-width: 1400px) {
 
     /* TEXT */
-    h1 {
-        font-size: calc(1.15rem + 1.1vw);
-    }
-
-    h2 {
-        font-size: calc(0.15rem + 0.9vw);
-    }
-
-    h4 {
-        font-size: calc(1.01rem + 0.3vw);
-    }
-
-    h6 {
-        font-size: calc(1.01rem + 0.1vw);
-    }
-
-    a,
-    p {
-        font-size: calc(.75rem + 0.3vw);
-    }
-
-    li {
-        list-style: none;
-    }
+    h1 {font-size: calc(1.15rem + 1.1vw);}
+    h2 {font-size: calc(0.15rem + 0.9vw);}
+    h4 {font-size: calc(1.01rem + 0.3vw);}
+    h6 {font-size: calc(1.01rem + 0.1vw);}
+    a,p {font-size: calc(.75rem + 0.3vw);}
+    li {list-style: none;}
 
     /* TEXT END */
 
@@ -466,7 +394,7 @@
     /* LAYOUT */
     #background {
         background-position: right center;
-        background-image: url(../../assets/images/xred-shift.webp);
+        background-image: url(../../assets/images/backgrounds/redshift.webp);
     }
 
     /* LAYOUT END */

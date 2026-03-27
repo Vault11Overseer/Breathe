@@ -8,7 +8,7 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<link rel="shortcut icon" type="image/webp" href="./assets/images/aa_logo.webp" />
+	<link rel="shortcut icon" type="image/webp" href="./assets/images/logo.webp" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 	<link rel="stylesheet" href="./css/index.css">
 	<link rel="stylesheet" href="./css/media.css">
@@ -24,33 +24,30 @@
 	<div id="background">
 
 		<!-- NAVIGATION -->
-		<div class="masthead" id='masthead'>
-			<header class="header" id="Header">
-				<nav class="header_navbar">
-					<!-- NAVIGATION LINKS -->
-					<ul class='navbar_links nav_menu'>
-						<li class='nav_item secondary'><a onclick="redshift()" id="redshift" class='nav_link'>Red
-								Shift</a></li>
-						<li class='nav_item secondary'><a onclick="mountaintop()" id="mountaintop"
-								class='nav_link'>Mountain Top</a></li>
-						<li class='nav_item secondary'><a onclick="templetree()" id="templetree" class='nav_link'>Temple
-								Tree</a></li>
-						<li class='nav_item secondary'><a onclick="temple()" id="temple" class='nav_link'>Temple</a>
-						</li>
-						<li class='nav_item secondary'><a onclick="wormhole()" id="wormhole"
-								class='nav_link'>Wormhole</a></li>
-					</ul>
+		<header id="Header">
+			<!-- NAVIGATION LINKS -->
+			<ul class='navbar'>
+				<li class='nav_item secondary'><a onclick="redshift()" id="redshift" class='nav_link'>Red
+						Shift</a></li>
+				<li class='nav_item secondary'><a onclick="mountaintop()" id="mountaintop" class='nav_link'>Mountain
+						Top</a></li>
+				<li class='nav_item secondary'><a onclick="templetree()" id="templetree" class='nav_link'>Temple
+						Tree</a></li>
+				<li class='nav_item secondary'><a onclick="temple()" id="temple" class='nav_link'>Temple</a>
+				</li>
+				<li class='nav_item secondary'><a onclick="wormhole()" id="wormhole" class='nav_link'>Wormhole</a>
+				</li>
+			</ul>
 
-					<!-- HAMBURGER MENU -->
-					<div class="hamburger">
-						<span class="bar"></span>
-						<span class="bar"></span>
-						<span class="bar"></span>
-					</div>
-				</nav>
-			</header>
-		</div>
+			<!-- HAMBURGER MENU -->
+			<div class="hamburger">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+		</header>
 
+		<!-- MAIN CONTROLLER -->
 		<div class="main-container">
 
 			<!-- CONTROL PANEL -->
@@ -83,8 +80,8 @@
 							</div>
 							<audio src="C:\xampp\htdocs\Breathe\public\assets\music\focus.mp3" id="audio"></audio>
 							<div class="music-img-container">
-								<img src="C:\xampp\htdocs\Breathe\public\assets\images\focus.webp" alt="music-cover"
-									id="music-cover" />
+								<img src="C:\xampp\htdocs\Breathe\public\assets\images\album_covers\focus.webp"
+									alt="music-cover" id="music-cover" />
 							</div>
 							<div class="music-navigation">
 								<button id="prev" class="action-btn">
@@ -129,9 +126,11 @@
 		<!-- FOOTER -->
 		<footer>
 			<p>
-				<script>document.write(new Date().getFullYear());</script> @ <a href="https://jaredmatta.com/"><img
-						src="./assets/images/aa_logo.webp" alt="logo" class='footer-logo'
-						style="width: 50px; height:50px;"></a>
+				<script>document.write(new Date().getFullYear());</script> @
+				<a href="https://jaredmatta.com/">
+					<img src="./assets/images/logo.webp" alt="logo" class='footer-logo'
+						style="width: 25px; height:25px;">
+				</a>
 			</p>
 		</footer>
 
@@ -145,11 +144,11 @@
 
 	<script>
 		// BACKGROUND CHANGE FUNCTIONS
-		function mountaintop() { document.getElementById("background").style.backgroundImage = "url('./assets/images/mountain-top.webp')"; }
-		function redshift() { document.getElementById("background").style.backgroundImage = "url('./assets/images/xred-shift.webp')"; }
-		function templetree() { document.getElementById("background").style.backgroundImage = "url('./assets/images/temple-tree.webp')"; }
-		function temple() { document.getElementById("background").style.backgroundImage = "url('./assets/images/temple.webp')"; }
-		function wormhole() { document.getElementById("background").style.backgroundImage = "url('./assets/images/wormhole.webp')"; }
+		function mountaintop() { document.getElementById("background").style.backgroundImage = "url('./assets/images/backgrounds/mountain.webp')"; }
+		function redshift() { document.getElementById("background").style.backgroundImage = "url('./assets/images/backgrounds/redshift.webp')"; }
+		function templetree() { document.getElementById("background").style.backgroundImage = "url('./assets/images/backgrounds/tree.webp')"; }
+		function temple() { document.getElementById("background").style.backgroundImage = "url('./assets/images/backgrounds/temple.webp')"; }
+		function wormhole() { document.getElementById("background").style.backgroundImage = "url('./assets/images/backgrounds/wormhole.webp')"; }
 	</script>
 
 </body>

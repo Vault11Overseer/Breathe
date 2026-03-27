@@ -45,7 +45,7 @@ function loadSong(song) {
   audio.src = `./assets/music/${song}.mp3`;
 
   // SET COVER IMAGE
-  cover.src = `./assets/images/${song}.webp`;
+  cover.src = `./assets/images/album_covers/${song}.webp`;
 }
 
 // PLAY AUDIO
