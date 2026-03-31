@@ -4,7 +4,7 @@ A responsive breathing and relaxation web application designed to help users red
 
 ## Demo
 
-Live demo: https://alteredartco.com/Breathe/
+Live demo: https://jaredmatta.com/Breathe/
 
 ---
 
