@@ -12,14 +12,16 @@ Live demo: https://alteredartco.com/Breathe/
 
 Breathe is a lightweight browser-based application built using vanilla HTML, CSS, and JavaScript. It provides an interactive relaxation environment that combines breathing prompts, background visuals, music playback, and motivational quotes.
 
-The goal of the project is to create a simple, distraction-free tool that users can access on desktop or mobile devices during moments of stress, focus sessions, or relaxation.
+The goal of the project is to create a "Zen" experience—a simple, distraction-free tool that users can access on desktop or mobile devices during moments of stress, focus sessions, or meditation. It utilizes smooth CSS transitions and synchronized JavaScript logic to create a cohesive atmosphere.
 
 ---
 
 ## Features
 
-- Guided breathing text prompts (breath in / breath out cycles)
-- Background scene switching via navigation menu
+- **Guided Breathing Engine**: Dynamic text prompts ("BREATHE IN!" / "~ breathe out ~") synchronized with a pulsating visual circle animation.
+- **Dynamic Environment System**: Seamlessly switch between five immersive background scenes (Temple, Mountain, Red Shift, Monastery, and Wormhole) via the navigation menu.
+- **Integrated Music Suite**: A custom-built HTML5 audio player featuring a curated playlist of 12 ambient tracks, real-time progress tracking, and album art rotation.
+- **Inspirational Quote Engine**: A rotating display of wisdom from figures like Alan Watts and Buddha, cycling every 12 seconds with smooth transitions.
 - Ambient music player with play, pause, skip, and progress controls
 - Rotating inspirational quotes
 - Responsive design for mobile, tablet, and desktop
@@ -31,10 +33,10 @@ The goal of the project is to create a simple, distraction-free tool that users 
 
 ## Tech Stack
 
-- HTML5
-- CSS3
-- Vanilla JavaScript
-- Font Awesome (icons)
+- **HTML5**: Semantic structure and Audio API for media playback.
+- **CSS3**: Advanced animations (Keyframes), Flexbox layout, and custom gradients.
+- **Vanilla JavaScript (ES6+)**: DOM manipulation, event-driven architecture, and interval management.
+- **Font Awesome**: High-quality vector icons for UI controls.
 - Google Fonts
 
 ---
@@ -93,15 +95,15 @@ Or open the `index.html` file directly in a browser.
 - Music controls:
   - Play / Pause
   - Previous / Next track
-  - Progress bar seek
+  - Interactive progress bar (click to seek)
 - Breathing display updates automatically on interval
 
 ---
 
 ## Key Improvements / Updates
 
-- Added mobile-responsive layout
-- Implemented hamburger navigation menu for mobile UX
+- **Synchronized Animation Logic**: Implemented `animationiteration` listeners to perfectly sync text changes with the visual pulse of the breathing circles.
+- **Advanced Mobile UX**: Integrated a sliding hamburger navigation menu and optimized touch targets for mobile users.
 - Integrated audio player with UI controls
 - Added rotating quote system
 - Added breathing prompt animations/text cycling
@@ -115,6 +117,7 @@ Or open the `index.html` file directly in a browser.
 - User accounts and login system
 - Custom playlists and audio uploads
 - Adjustable breathing pace settings
+- Dark/Light mode persistence
 - Theme customization and presets
 - Expanded animation and visual effects
 - Enhanced accessibility options (ARIA support, reduced motion mode)

@@ -7,7 +7,15 @@
 * {margin: 0;padding: 0;}
 *,*::before,*::after {box-sizing: border-box;}
 
-/* BACKGROUND - MAIN */
+html {
+    background-color: #000; /* Sets the base canvas color to black */
+}
+body {
+    overflow-x: hidden;
+    background-color: #000;
+    min-height: 100vh;
+}
+
 #background {
     min-height: 100vh;
     width: 100%;
@@ -15,10 +23,11 @@
     background-size: cover;
     background-position: center;
     transition: background-image 0.5s ease-in-out;
+    background-attachment: fixed; /* Keeps the background image immersive while scrolling */
     padding: 1rem 2rem 0 2rem;
     color: white;
     font-size: 1.2rem;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-image: url("../assets/images/backgrounds/redshift.webp");
     display: flex;
     flex-direction: column;
@@ -105,7 +114,6 @@ hr {
 
 .quote-container {padding: 1rem;}
 #quote-author { font-style: italic; padding-top:1rem;}
-
 
 
 
@@ -242,25 +250,8 @@ hr {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-    height: 70px; /* Keeps the container at a static height */
+    height: 70px; 
 }
-
-
-.breathe {
-    animation: breathing 8s infinite;
-    transition: all 0.3s ease-in-out, opacity 0.5s ease-in-out; /* Added opacity transition */
-}
-
-.breathe.fade-out {
-    opacity: 0;
-}
-
-/* 
-.action-btn-big {
-    -webkit-animation: breathing 5s ease-out infinite normal;
-    animation: breathing 5s ease-out infinite normal;
-} */
-
 
 /* RIGHT COLUMN END */
 

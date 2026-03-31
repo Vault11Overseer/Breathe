@@ -63,57 +63,40 @@
 /* CIRCLES - END */
 
 
-/* BREATHING */
-@-webkit-keyframes breathing {
-    0% {
-        -webkit-transform: scale(0.9);
-        transform: scale(0.9);
-    }
+/* BREATHE */
+.breathe {transition: opacity 0.2s ease;}
 
-    25% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
+/* FADE */
+.fade-out {opacity: 0;}
 
-    60% {
-        -webkit-transform: scale(0.9);
-        transform: scale(0.9);
-    }
+/* GROW */
+.inhale {animation: inhaleText 4s linear forwards;}
 
-    100% {-webkit-transform: scale(0.9);transform: scale(0.9);}
+/* SHRINK */
+.exhale {animation: exhaleText 4s linear forwards;}
+
+@keyframes inhaleText {
+    from { transform: scale(0.9); }
+    to   { transform: scale(1.2); }
 }
 
-@keyframes breathing {
+@keyframes exhaleText {
+    from { transform: scale(1.2); }
+    to   { transform: scale(0.9); }
+}
+
+@keyframes gradient {
     0% {
-        -webkit-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-        transform: scale(0.9);
+        background-position: 0% 50%;
     }
-
-    25% {
-        -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-        transform: scale(1);
+    50% {
+        background-position: 100% 50%;
     }
-
-    60% {
-        -webkit-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-        transform: scale(0.9);
-    }
-
     100% {
-        -webkit-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-        transform: scale(0.9);
+        background-position: 0% 50%;
     }
 }
-
-
-
-
-
-
+/* BREATHE - END */
 
 
 
@@ -124,6 +107,7 @@
     #background {
         min-height: 100vh;
         padding: 2rem;
+        background-attachment: scroll; /* Prevents gaps caused by fixed backgrounds on mobile */
     }
 
     .hamburger { 
@@ -160,7 +144,8 @@
 
     .navbar.active { left: 0; }
     .navbar li { 
-        max-width: 100%; /* Reset desktop constraints */
+        max-width: 100%;
+        min-width: 250px;
     }
 
     .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
@@ -192,7 +177,7 @@
 
     .main-container {padding-bottom: 10rem;}
 
-    footer {padding-top: 10rem;}
+    footer {padding: 10rem 0 6rem 0;}
 
 
 }
@@ -213,8 +198,9 @@
 
 
      #background {
-        /* min-height: 100vh; */
+        min-height: 100vh;
         padding: 1rem;
+        background-attachment: scroll; /* Prevents gaps caused by fixed backgrounds on mobile */
     }
 
     .hamburger { 
@@ -223,7 +209,7 @@
         left: auto;
         z-index: 999; 
         cursor: pointer;
-        margin: 1rem 0;
+        margin: 3rem 0;
     }
     
     .navbar {
@@ -234,7 +220,7 @@
         height: 100vh;
         align-items: center;
         justify-content: start;
-        padding: 3rem;
+        padding: 9rem;
     }
 
     .navbar.active {
@@ -242,12 +228,21 @@
     }
 
     .left-column, .right-column {
-        width: 100%;
+        width: 90%;
         max-width: 100%;
     }
 
+
+    .music-info {
+        padding: 60px 50px 1px 180px;
+         left: -2px;
+    width: 101.3%;
+    }
+
+
+
     footer {
-        padding-top: 10rem;;
+        padding: 10rem 0 6rem 0;
     }
 
 

@@ -123,37 +123,28 @@ revolvingQuotes()
 
 
 
-// BREATHING TEXT
-var biboText = ["BREATHE IN!", "breathe out!"];
-// TRACK BREATHING STATE INDEX
-var biboCounter = 0;
-// GET BREATHING TEXT ELEMENT FROM DOM
-var biboWord = document.getElementById("breathe");
+// // BREATHING TEXT
+const textEl = document.getElementById("breathe");
+const circle = document.querySelector(".circle-container");
 
-const FADE_DURATION = 500; // Milliseconds, matches CSS transition duration for opacity
-const CYCLE_DURATION = 4000; // Milliseconds, the interval for text change
+let isInhale = true;
 
-function animateBreatheText() {
-  // Set the current text and ensure it's visible (fade-in)
-  biboWord.innerHTML = biboText[biboCounter];
-  biboWord.classList.remove('fade-out');
+circle.addEventListener("animationiteration", () => {
+  isInhale = !isInhale;
 
-  // Prepare for the next text in the sequence
-  biboCounter++;
-  if (biboCounter >= biboText.length) {
-    biboCounter = 0;
-  }
+  textEl.classList.add("fade-out");
 
-  // Schedule the fade-out to start before the next text change
   setTimeout(() => {
-    biboWord.classList.add('fade-out');
-  }, CYCLE_DURATION - FADE_DURATION);
+    if (isInhale) {
+      textEl.textContent = "BREATHE IN !";
+      textEl.classList.remove("exhale");
+      textEl.classList.add("inhale");
+    } else {
+      textEl.textContent = "~ breathe out ~";
+      textEl.classList.remove("inhale");
+      textEl.classList.add("exhale");
+    }
 
-  // Schedule the next text update and fade-in cycle
-  setTimeout(() => {
-    animateBreatheText(); // Recursive call for the next cycle
-  }, CYCLE_DURATION);
-}
-
-// INITIALIZE BREATHING TEXT
-animateBreatheText();
+    textEl.classList.remove("fade-out");
+  }, 200);
+});
