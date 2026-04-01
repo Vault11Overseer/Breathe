@@ -43,12 +43,18 @@ function changeBackground(fileName, linkId) {
   document.getElementById(linkId).classList.add('active-bg');
 }
 
-// Set initial state for Red Shift on load
-window.onload = () => {
-  document.getElementById('redshift').classList.add('active-bg');
-};
+document.addEventListener('DOMContentLoaded', () => {
+  // Set initial state for Red Shift
+  const redShiftLink = document.getElementById('redshift');
+  if (redShiftLink) redShiftLink.classList.add('active-bg');
 
+  // Initialize first quote
+  revolvingQuotes();
 
+  // Set Footer Year
+  const yearEl = document.getElementById('year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+});
 
 // QUOTES
 // ARRAY OF QUOTES USED FOR ROTATION DISPLAY
@@ -108,10 +114,6 @@ function revolvingQuotes() {
     counter = 0
   }
 }
-
-// INITIALIZE FIRST QUOTE
-revolvingQuotes()
-
 
 
 

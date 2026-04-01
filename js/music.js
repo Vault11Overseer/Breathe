@@ -34,7 +34,9 @@ let songIndex = 0;
 
 // INITIAL LOAD
 // LOAD FIRST SONG INTO UI AND AUDIO ELEMENT
-loadSong(songs[songIndex]);
+document.addEventListener('DOMContentLoaded', () => {
+  loadSong(songs[songIndex]);
+});
 
 // LOAD SONG DATA INTO UI + AUDIO SOURCE
 function loadSong(song) {
